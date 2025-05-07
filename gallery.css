@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    /* font-family: "poppins"; */
+    outline: none;
+    border: none; 
+    color: #fff;
+}
+html{
+    overflow-x: hidden;
+    font-size: 16px;
+}
+@media(max-width:1200px){
+    html{
+        font-size: 18px;
+    }
+}
+@media(max-width:786px){
+    html{
+        font-size: 18px;
+    }
+} 
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    color:white;
+    font-family: "Hind", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1rem;
+
+}
+.top-small {
+    color: #E4C590;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 4px;
+    font-size: 0.5rem;
+    font-weight: bold;
+    margin-top: 10px; 
+}
+@media (max-width: 600px) {
+    .top-small {
+        font-size: .4rem;
+        letter-spacing: 3px;
+    }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+    .top-small {
+        font-size: .65rem;
+        letter-spacing: 3.5px;
+    }
+}
+@media (min-width: 901px) {
+    .top-small {
+        font-size: .7rem;
+        letter-spacing: 4px;
+    }
+}
+.ga_head {
+    font-size: 1.5rem; /* Default size for smaller screens */
+}
+@media (min-width: 600px) {
+    .ga_head {
+        font-size: 3rem; /* Medium screens */
+    }
+    .menup{
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .ga_head {
+        font-size: 4rem; /* Large screens */
+    }
+    .menup{
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .ga_head {
+        font-size: 5rem; /* Extra large screens */
+    }
+    .menu_p{
+        font-size: 1.8rem;
+    }
+}
+.pill-link{
+    background-color: black; 
+    color: #E4C590 !important;
+    outline: 2px solid #E4C590;
+    outline-offset: 5px;
+    font-weight: bold;
+    margin-left: 23px;
+}
+.nav-link.active{
+    background-color: #E4C590 !important;
+    color: black !important;
+}
+.pill-link{
+    background-color: #212529 !important;
+    color: white;
+}
+
+/* ==========hover effect styling for div start====== */
+.gallery-box {
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.gallery-box .box {
+    position: relative;
+    display: inline-block;
+    width: 100%; /* Full width of the column */
+    height: 300px;
+    background: #262626;
+    overflow: hidden;
+}
+
+.gallery-box .box img {
+    width: 100%;
+    height: 100%;
+    transition: transform 5s;
+    border-radius: 8px;
+}
+
+.gallery-box .box:hover img {
+    transform: scale(1.5);
+}
+
+.gallery-box .box::before,
+.gallery-box .box::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    transition: transform 1s;
+    z-index: 2;
+}
+
+.gallery-box .box::before {
+    transform: scale(1, 0);
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+
+.gallery-box .box::after {
+    transform: scale(0, 1);
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.gallery-box .box:hover::before,
+.gallery-box .box:hover::after {
+    transform: scale(1, 1);
+}
+
+.gallery-box .box .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 1s;
+}
+
+.gallery-box .box:hover .content {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.gallery-box .box .content .wrap {
+    box-sizing: border-box;
+    padding: 20px;
+    color: #fff;
+    z-index: 3;
+}
+
+.gallery-box .box .content .wrap h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    transform: translateY(-80px);
+    opacity: 0;
+    transition: transform 1s, opacity 1s;
+    color: #E4C590;
+}
+
+.gallery-box .box:hover .content .wrap h1 {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.gallery-box .box .content .wrap p {
+    font-size: 15px;
+    transform: translateY(170px);
+    opacity: 0;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.gallery-box .box:hover .content .wrap p {
+    transform: translateY(0);
+    opacity: 1;
+}
+/* ==========hover effect styling for div start====== */
+
+

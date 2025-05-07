@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    /* font-family: "poppins"; */
+    outline: none;
+    border: none; 
+    color: #fff;
+}
+html{
+    overflow-x: hidden;
+    font-size: 16px;
+}
+@media(max-width:1200px){
+    html{
+        font-size: 18px;
+    }
+}
+@media(max-width:786px){
+    html{
+        font-size: 18px;
+    }
+} 
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    color:white;
+    font-family: "Hind", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+}
+.top-small {
+    color: #E4C590;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 4px;
+    font-size: 0.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+    
+}
+@media (max-width: 600px) {
+    .top-small {
+        font-size: .4rem;
+        letter-spacing: 3px;
+    }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+    .top-small {
+        font-size: .65rem;
+        letter-spacing: 3.5px;
+    }
+}
+@media (min-width: 901px) {
+    .top-small {
+        font-size: .7rem;
+        letter-spacing: 4px;
+    }
+}
+h1 {
+    font-size: 3.5rem;
+    margin: 30px;
+}
+
+.events1{
+    background-color: #E4C590;
+    /* position: relative; */
+    margin-top: 150px;
+}
+.events2{
+    color:#E4C590;
+    background-color:black;
+}
+.img-div{
+    padding-right: 100px;
+}
+.events-content{
+    padding-top: 80px;
+    padding-bottom: 150px;
+}
+
+
+.events-p1{
+    font-size: 1rem;
+    color: black;
+
+}
+.events-p2{
+    font-size: 1rem;
+    color:#E4C590;
+}
+
+
+.events-head1{
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.events-head2{
+    color:#E4C590;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.events-img{
+   
+   height: 450px;
+   float: right;
+   margin-top: -70px;
+   
+} 
+
+/* ========all  media quary===== */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        margin: 20px;
+    }
+    .img-div{
+        padding-right: 10px;
+    }
+    .events-img{
+   
+        height: 400px;
+        float: right;
+        margin-top: 30px;
+        
+     } 
+}
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+        margin: 10px;
+    }
+    .img-div{
+        padding-right: 10px;
+    }
+    .events-img{
+   
+        height: 300px;
+        float: right;
+        margin-top: 30px;
+        
+     } 
+     .events-content{
+        padding-top: 80px;
+        padding-bottom: 30px;
+    }
+    .events1{
+        margin-top: 0px;
+    }
+}
+  

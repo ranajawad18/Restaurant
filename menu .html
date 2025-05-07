@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- *****Important to show emoji*****.. -->
+    <meta charset="UTF-8">
+    <!-- to making website responsive...as a scale -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--***** bootstrap css***** -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+       <!-- *****bootstrap js link****** -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+     <!-- ******favicon link***** -->
+     <link rel="shortcut icon" href="favicon/favicon.svg" type="image/svg+xml">
+   <!-- ******fontowsome link***** -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- ======jquary cdn link ========-->
+<script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+<!-- aos animation link -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+ <!-- external stylesheet link -->
+  <link rel="stylesheet" href="assets/css/navbar.css">
+ <link rel="stylesheet" href="assets/css/menu.css">
+ <!-- ===========Google fonts link============ -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- This is title that show on the top of the chrome.. -->
+    <title>Amazing & Delicious Food</title>
+</head>
+<body>
+     <!-- ============location bar start========= -->
+     <div class="container-fluid location pt-1 border-0">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- ======Location====== -->
+                <div class="col-lg-4 col-md-4 col-12 text-white ">
+                    <p><i class="fa-regular fa-clock p-0" title="Time"></i> <a href="#" class="address"><span style="color: #E4C590;"> Open 7 Days : </span>Lunch 11 AM - 3 PM | Dinner: 5 PM - 10 PM | Mon-Sun 11 AM - 10 PM</a></p>   
+                </div>
+                <!-- ========Social media links======= -->
+                <div class="col-lg-4 col-md-4 col-12 text-center text-lg-start text-white ps-5 pt-4 ">
+                    <p> <a href="mailto:foods@salva.com.pk"><i class="fa-solid fa-envelope" title="Email"></i></a> <a href="#"> <i title ="facebook" class="fa-brands fa-facebook-f"></i></a>
+                      <a href="www.salva.com.pk"> <i class="fa-solid fa-globe" title="website"></i></a>
+                     <a href=" tel:044-2661112" id="phoneLink"> <i class="fa-solid fa-phone" title="Phone"></i> </a>
+                    </p>
+                </div>
+                <!-- =======Time====== -->
+                <div class="col-lg-4 col-md-4 col-12 text-lg-end text-white pt-2">
+                  <p> <i class="fa-solid fa-location-dot p-0" title="Location"></i> <a href="#" class="address"><span style="color: #E4C590;">Location :</span>12-Km Faisalabad Road Okara</a></p>   
+              </div>
+                <!--======== row end======== -->
+            </div>
+            <!-- ========container end======== -->
+        </div>
+        <!-- ========container-fluid end========  -->
+    </div>
+    <!-- =========location bar end ========= -->
+    <!-- =======navigation_bar start========= -->
+    <div class="container-fluid img-header">
+        <nav class=" navbar navbar-expand-lg navbar-dark main_nav  ">
+        <div class="container-fluid">
+                <!-- =======logo-pic=====-->
+             <img src="assets/images/logo.png" alt="logo" width="200px">
+              <!-- ======toggle is here=====-->
+              <button class="navbar-toggler shadow-none border-0" 
+                   type="button" 
+                 data-bs-toggle="offcanvas" 
+                 data-bs-target="#offcanvasNavbar" 
+                 aria-controls="offcanvasNavbar" 
+                 aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <!-- =======off-canvas start======= -->
+                <div class="offcanvas offcanvas-start sidebar "
+                tabindex="-1" id="offcanvasNavbar" 
+                aria-labelledby="offcanvasNavbarLabel">
+                 <!-- =======sidebar header========= -->
+                   <div class="offcanvas-header text-white border-bottom">
+                      <h5 class="offcanvas-title" 
+                       id="offcanvasNavbarLabel"><img src="assets/images/logo.png" alt="logo" width="200px"></h5>
+                       <button type="button" 
+                         class="btn-close btn-close-white " 
+                         data-bs-dismiss="offcanvas" 
+                          aria-label="Close">
+                        </button>
+                </div>
+                <!-- sidebar body****** -->
+                <div class="offcanvas-body nav">
+                    <ul class="  navbar-nav justify-content-lg-end justify-content-center  align-items-center fs-6  flex-grow-1 pe-2 text-white">
+                        <li class="nav-item mx-2">
+                          <a class="nav-link  linkscolor" aria-current="page" href="home.html">Home</a>
+                        </li>
+                       <li class="nav-item mx-2">
+                          <a class="nav-link linkscolor linkscolor-home" href="menu .html">menu</a>
+                       </li>
+                       <li class="nav-item mx-2">
+                         <a class="nav-link linkscolor" href="events.html">Events</a>
+                       </li>
+                       <li class="nav-item mx-2">
+                         <a class="nav-link linkscolor" href="about_us.html">about us</a>
+                       </li>
+                       <li class="nav-item mx-2">
+                         <a class="nav-link linkscolor" href="contact-us.html">contact</a>
+                       </li>
+                       <li class="nav-item mx-2">
+                        <a class="nav-link linkscolor" href="gallery.html">gallery</a>
+                      </li>
+                      <button type="button" class="login-btn "><a href="login.html" class="login-a">Login</a></button>
+                    </ul>
+                </div>
+              
+            </div>
+        </nav>
+        </div>
+<!-- =======navigation_bar End========= -->
+   <!-- ===Delicious Menu page start======== -->
+   <div class="container-fluid menu">
+    <div class="container">
+       <div class="text-center">
+        <span class="mt-3 top-small">special selection</span> <br>
+        <img src="assets/images/separator.svg" alt="" style="width: 100px; margin-top: 10px;" class="img img-fluid">
+        <h1 class="mt-3 menu_head" data-aos="fade-up">Delicious Menu</h1>
+        </div>
+        <!-- =====1st row menu=== -->
+        <div class="row">
+            <!-- =====1st menu=== -->
+            <div class="col-lg-6 col-md-6 col-12">
+                <div class="d-flex mt-5" data-aos="fade-up">
+                    <div>
+                        <img src="assets/images/menu-1.png" alt="menu1-pic" class="menu_dish">
+                    </div>
+                    <div class="ms-3">
+                        <h4>Mutton Curry<em style="float: right;">1200 PKR</em></h4>
+                        <p class="menup">Tender pieces of mutton simmered in a rich, spiced gravy with ingredients like tomatoes, onions, and various spices. It’s typically enjoyed with rice, naan, or roti.</p>
+                    </div>
+                </div>
+            </div>
+             <!-- =====2nd menu=== -->
+            <div class="col-lg-6 col-md-6 col-12">
+                <div class="d-flex mt-5" data-aos="fade-up">
+                    <div>
+                        <img src="assets/images/menu-2.png" alt="menu2-pic" class="menu_dish">
+                    </div>
+                    <div class="ms-3">
+                        <h4>Spicy Noodle Soup<em style="float: right;">2000 PKR</em></h4>
+                        <p class="menup">Noodles, a spicy broth, vegetables, and meat. It's commonly garnished with herbs, lime, and chili for added flavor.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- =====2nd row menu=== -->
+         <div class="row">
+            <!-- =====3rd menu=== -->
+            <div class="col-lg-6 col-md-6 col-12">
+                <div class="d-flex mt-5" data-aos="fade-up">
+                    <div>
+                        <img src="assets/images/menu-3.png" alt="menu3-pic" class="menu_dish">
+                    </div>
+                    <div class="ms-3">
+                        <h4>Chicken Biryani<em style="float: right;">2500 PKR</em></h4>
+                        <p class="menup">Chicken, basmati rice, aromatic spices, and sometimes vegetables. It's often garnished with fried onions, fresh herbs, and served with raita or a side salad.</p>
+                    </div>
+                </div>
+            </div>
+             <!-- =====4th menu=== -->
+            <div class="col-lg-6 col-md-6 col-12">
+                <div class="d-flex mt-5" data-aos="fade-up">
+                    <div>
+                        <img src="assets/images/menu-4.png" alt="menu4-pic" class="menu_dish">
+                    </div>
+                    <div class="ms-3">
+                        <h4>Palak Paneer<em style="float: right;">10,000 PKR</em></h4>
+                        <p class="menup">Paneer cubes cooked in a spiced spinach gravy. It is typically served with naan or rice.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- =====3rd row menu=== -->
+        <div class="row">
+            <!-- =====5th menu=== -->
+            <div class="col-lg-6 col-md-6 col-12">
+                <div class="d-flex mt-5" data-aos="fade-up">
+                    <div>
+                        <img src="assets/images/menu-5.png" alt="menu5-pic" class="menu_dish">
+                    </div>
+                    <div class="ms-3">
+                        <h4>Spinach Rice<em style="float: right;">1200 PKR</em></h4>
+                        <p class="menup">Flaky salmon fillets paired with rice and sautéed spinach. It’s often seasoned with herbs and lemon for added flavor.</p>
+                    </div>
+                </div>
+            </div>
+             <!-- =====6th menu=== -->
+            <div class="col-lg-6 col-md-6 col-12">
+                <div class="d-flex mt-5" data-aos="fade-up">
+                    <div>
+                        <img src="assets/images/menu-6.png" alt="menu6-pic" class="menu_dish">
+                    </div>
+                    <div class="ms-3">
+                        <h4>Opu Fish<em style="float: right;">1200 PKR</em></h4>
+                        <p class="menup">Opu fish, also known as Opah or Moonfish, is typically cooked with a variety of seasonings and served with vegetables or rice. It has a mild flavor and firm texture.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- =====4th row menu=== -->
+        <div class="row">
+            <!-- =====7th menu=== -->
+            <div class="col-lg-6 col-md-6 col-12">
+                <div class="d-flex mt-5" data-aos="fade-up">
+                    <div>
+                        <img src="assets/images/menu-7.png" alt="menu7-pic" class="rounded menu_dish">
+                    </div>
+                    <div class="ms-3">
+                        <h4>Greek Salad<em style="float: right;">1000 PKR</em></h4>
+                        <p class="menup">Transport your taste buds to the shores of Greece with our refreshing Greek Salad, featuring crisp lettuce, juicy tomatoes, tangy olives, creamy feta cheese, and a drizzle of olive oil, delivering a burst of Mediterranean flavors in every bite.</p>
+                    </div>
+                </div>
+            </div>
+             <!-- =====8th menu=== -->
+            <div class="col-lg-6 col-md-6 col-12">
+                <div class="d-flex mt-5" data-aos="fade-up">
+                    <div>
+                        <img src="assets/images/menu-8.jpg" alt="menu8-pic" class="rounded menu_dish">
+                    </div>
+                    <div class="ms-3">
+                        <h4>Hyderabadi Chicken Biryani<em style="float: right;">12,000 PKR</em></h4>
+                        <p class="menup">Indulge your senses with our authentic Hyderabadi Chicken Biryani, meticulously crafted with fragrant basmati rice, succulent chicken pieces, and a symphony of aromatic spices, creating a culinary masterpiece that is both rich in flavor and unforgettable in taste. Savor the essence of Hyderabad in every bite, a true delight for the discerning palate.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- =====5 row menu=== -->
+        <div class="row">
+            <!-- =====9 menu=== -->
+            <div class="col-lg-6 col-md-6 col-12">
+                <div class="d-flex mt-5" data-aos="fade-up">
+                    <div>
+                        <img src="assets/images/menu-9.png" alt="menu9-pic" class="rounded menu_dish">
+                    </div>
+                    <div class="ms-3">
+                        <h4>Caviar Pasta<em style="float: right;">10,000 PKR</em></h4>
+                        <p class="menup">Indulge in luxury with our exquisite Caviar Pasta, where delicate strands of al dente pasta are adorned with the finest caviar, creating a symphony of textures and flavors that elevate every forkful to a culinary delight fit for royalty.</p>
+                    </div>
+                </div>
+            </div>
+             <!-- =====10th menu=== -->
+            <div class="col-lg-6 col-md-6 col-12">
+                <div class="d-flex mt-5" data-aos="fade-up">
+                    <div>
+                        <img src="assets/images/menu-10.png" alt="menu10-pic" class="rounded menu_dish">
+                    </div>
+                    <div class="ms-3">
+                        <h4>Punjabi Naan <em style="float: right;">1200 PKR</em></h4>
+                        <p class="menup">Embark on a culinary journey to Punjab with our delectable Punjabi Naan, lovingly crafted to perfection with soft, fluffy dough and infused with aromatic spices, delivering an authentic taste of North India in every heavenly bite.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- =====6th row menu=== -->
+         <div class="row">
+            <!-- =====11th menu=== -->
+            <div class="col-lg-6 col-md-6 col-12">
+                <div class="d-flex mt-5" data-aos="fade-up">
+                    <div>
+                        <img src="assets/images/menu-11.png" alt="menu11-pic" class="rounded menu_dish">
+                    </div>
+                    <div class="ms-3">
+                        <h4>Butter Chicken<em style="float: right;">10,000 PKR</em></h4>
+                        <p class="menup">Experience the epitome of Indian comfort food with our Butter Chicken, where tender pieces of chicken are enveloped in a rich, creamy tomato-based sauce, infused with a harmonious blend of spices, creating a dish that's both indulgent and utterly satisfying.</p>
+                    </div>
+                </div>
+            </div>
+             <!-- =====12th menu=== -->
+            <div class="col-lg-6 col-md-6 col-12">
+                <div class="d-flex mt-5" data-aos="fade-up">
+                    <div>
+                        <img src="assets/images/menu-12.png" alt="menu12-pic" class="rounded menu_dish">
+                    </div>
+                    <div class="ms-3">
+                        <h4>Opu Fish<em style="float: right;">1200 PKR</em></h4>
+                        <p class="menup">Embark on a seafood adventure with our tantalizing Opu Fish, featuring succulent fillets marinated in a flavorful blend of spices, grilled to perfection, and served with a side of fresh greens, offering a mouthwatering fusion of taste and texture that will leave you craving for more.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-5">
+            <h6 class="mt-5 fw-light fs-4" data-aos="fade-up">During winter daily from <em>7:00 pm </em> to <em>9:00 pm </em></h6>
+            <button type="button" class="lobster-btn mb-5" data-aos="fade-up"><a href="contact-us.html" class="btn-all">booking now</a></button>
+        </div>
+       </div>
+    </div>
+<!-- ========Menu page *****Delicious Menu page End======== -->
+
+<!-- =======Gallery section start======== -->
+<div class="container-fluid mt-5">
+    <div class="container">
+        <div class="text-center">
+            <span class="mt-3 top-small">Mano-o-Salva</span> <br>
+            <img src="assets/images/separator.svg" alt=" decorated-line" style="width: 100px; margin-top: 10px;" class="img img-fluid">
+            <h1 class="mt-3 menu_head" data-aos="fade-up">Takeout Menu List</h1>
+        </div>
+        <!-- =====1st row menu==== -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12">
+            <div>
+                <ul class="nav nav-pills justify-content-center">
+                    <li class="nav-item mt-4">
+                        <a class="nav-link active pill-link" href="#Rice" data-bs-toggle="pill">Rice & Biryani - Seafood - Beverages</a>
+                    </li>
+                    <li class="nav-item mt-4">
+                        <a class="nav-link pill-link" href="#Lamb" data-bs-toggle="pill">Lamb & Goat - Party Trays - Desserts</a>
+                    </li>
+                    <li class="nav-item mt-4">
+                        <a class="nav-link pill-link" href="#Chicken" data-bs-toggle="pill">Chicken & Indo-Chinese Entrees</a>
+                    </li>
+                    <li class="nav-item mt-4">
+                        <a class="nav-link pill-link" href="#Vegetable" data-bs-toggle="pill">Vegetable Curries</a>
+                    </li>
+                    <li class="nav-item mt-4">
+                        <a class="nav-link pill-link" href="#Tandoori" data-bs-toggle="pill">Tandoori Oven & Breads</a>
+                    </li>
+                   
+                    <li class="nav-item mt-4">
+                        <a class="nav-link  pill-link" href="#Appetizers" data-bs-toggle="pill">Appetizers</a>
+                    </li>
+                </ul>
+                <div class="tab-content mt-5">
+                    <div id="Rice" class="tab-pane active">
+                        <div class="container">
+                            <div>
+                                <img src="assets/images/rice.jpg" alt="Rice-menu-pic" class="img img-fluid w-100">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Lamb" class="tab-pane">
+                        <div class="container">
+                            <div>
+                                <img src="assets/images/lamb.jpg" alt="Lamb-menu-pic" class="img img-fluid w-100">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Tandoori" class="tab-pane">
+                        <div class="container">
+                            <div>
+                                <img src="assets/images/bread.jpg" alt="tandoori-menu-pic" class="img img-fluid w-100">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Vegetable" class="tab-pane">
+                        <div class="container">
+                            <div>
+                                <img src="assets/images/vegetable.jpg" alt="vegitable-menu-pic" class="img img-fluid w-100">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Chicken" class="tab-pane">
+                        <div class="container">
+                            <div>
+                                <img src="assets/images/chicken.jpg" alt="chicken" class="img img-fluid w-100">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Appetizers" class="tab-pane">
+                        <div class="container">
+                            <div>
+                                <img src="assets/images/appetizers.jpg" alt="Appetizers-menu-pic" class="img img-fluid w-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>                        
+<!-- =======Gallery section End======== -->
+
+        <!-- ======java_script for phone link====== -->
+<script>
+    // Function to handle the click event
+    document.getElementById('phoneLink').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default action (dialing)
+        alert('Select an app to make the call.');
+        // Optional: Redirect to the phone number link after showing the alert
+        window.location.href = this.href;
+    });
+</script>
+<!-- ======java_script for phone link End===== -->
+<!-- =======Footer-page start======== -->
+<div class="container-fluid footer">
+    <div class="container  footer-inner pt-5 pb-5 shadow">
+       <div class="row">
+         <!-- ======1st colum====== -->
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="mt-3" data-aos="fade-up">
+            <img src="assets/images/logo.png" alt="logo" width="200px">
+            <p class=" footer-p mt-3">Man-o-Salva offers you a delightful experience of traditional Pakistani cuisine, showcasing rich flavors in every bite. Visit our table and enjoy the essence of Pakistani culinary culture.</p>
+          </div>
+        </div>
+         <!-- ======2nd column====== -->
+         <div class="col-lg-3 col-md-6 col-12">
+          <div  data-aos="fade-down">
+            <h3 class="mt-3 mb-3">Business hours</h3>
+            <h5>Monday - Sunday</h5>
+            <h5 class="mt-4">Lunch Time:</h5>
+            <p class="gold-clr">
+              12:00 PM - 03:00 PM</p>
+              <h5 class="mt-4"> Dinner Time:</h5>
+            <p class="gold-clr">06:00 PM - 12:00 AM</p>
+          </div>
+        </div>
+        <!-- ======3rd column====== -->
+        <div class="col-lg-3 col-md-6 col-12">
+          <div  data-aos="fade-up">
+            <h3 class="mt-3 mb-3 ms-5">Contact Us</h3>
+            <div class="d-flex mt-3">
+              <div>
+                <i class="fa-solid fa-location-dot fs-3 mx-3" style="color: #E4C590;""></i>
+              </div>
+              <div>
+                <h6 class="gold-clr">Location :</h6>
+                <!-- <p class="footer-p">YOUNG PUR CHAK NO 38/GD DAKHANA KHAS TEHSIL/DISTRICT OKARA</p> -->
+                <p class="footer-p">12-Km Faisalabad Road Okara</p>
+              </div>
+            </div>
+            <div class="d-flex mt-3">
+              <div>
+                <i class="fa-solid fa-phone fs-3 mx-3" style="color: #E4C590;"></i>
+              </div>
+              <div >
+                <h5 class="gold-clr">Phone Number :</h5>
+                <p class="footer-p">tel:+92 3190603710</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- =======4th column====== -->
+         <div class="col-lg-3 col-md-6 col-12">
+          <h3 class="mt-3 mb-3"  data-aos="fade-up">Gallery</h3>
+          <div class="d-flex gap-3"  data-aos="fade-up">
+            <div>
+              <img src="assets/images/menu-1 (1).png" alt="" width="60px">
+            </div>
+            <img src="assets/images/menu-2.jpg" alt="" width="60px">
+            <div>
+              <img src="assets/images/menu-3 (1).png" alt="" width="60px">
+            </div>
+          </div>
+          <div class="d-flex gap-3 mt-3 "  data-aos="fade-up">
+            <div>
+              <img src="assets/images/menu-5 (1).png" alt="" width="60px">
+            </div>
+            <img src="assets/images/menu-10.png" alt="" width="60px">
+            <div>
+              <img src="assets/images/menu-5 (1).png" alt="" width="60px">
+            </div>
+          </div>
+         </div>
+       </div>
+      </div>
+      <!-- =======Footer-page End======== -->
+      <!-- =======Copyright start======== -->
+      <div class="container-fluid  footer-inner pt-1 pb-3 text-center rounded shadow ">
+        <p>Copyright © 2024 Mano-o-Salva All Rights Reserved. | Crafted by Rana Jawad <i class="fa-solid fa-heart gold-clr"></i></p>
+       </div>
+     <!-- =======copyrights end======== -->
+    </div>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+     AOS.init({
+        offset: 80, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 1000, // values from 0 to 3000, with step 50ms
+  once: true, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+
+});
+   </script>
+    
+</body>
+</html>

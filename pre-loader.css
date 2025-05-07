@@ -1,0 +1,64 @@
+/* Reset some default styling */
+/* body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+} */
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.789), rgba(0, 0, 0, 0.789)),url('../images/pre-loader-bg.jpg');
+    /* background-color: black; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.loader-container {
+    text-align: center;
+    color: #fff;
+}
+
+
+
+.progress-bar {
+    width: 150px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.progress {
+    width: 0;
+    height: 100%;
+    background: #eac585c8;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: progress 5s linear;
+}
+
+@keyframes progress {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+#main-content {
+    display: none; /* Hide main content initially */
+    padding: 20px;
+    text-align: center;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- *****Important to show emoji*****.. -->
+    <meta charset="UTF-8">
+    <!-- to making website responsive...as a scale -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--***** bootstrap css***** -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+       <!-- *****bootstrap js link****** -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+     <!-- ******favicon link***** -->
+     <link rel="shortcut icon" href="favicon/favicon.svg" type="image/svg+xml">
+   <!-- ******fontowsome link***** -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- ======jquary cdn link ========-->
+<script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+ <!-- external stylesheet link -->
+ <link rel="stylesheet" href="assets/css/admin.css">
+ <!-- ===========Google fonts link============ -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- This is title that show on the top of the chrome.. -->
+    <title>Amazing & Delicious Food</title>
+</head>
+<body>
+    <!-- ========== top navbar===== -->
+     <nav>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-12">
+                <div>
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" > <img src="assets/images/Admin.png" alt="Admin" width="30px" ></a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item fw-bold" href="#"> <i class="fa-solid fa-user pe-2 text-dark"></i>Profile</a></li>
+                                <li> <hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-wrench text-dark pe-2"></i>Setting</a></li>
+                                <li> <hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-arrow-right-from-bracket text-dark pe-2"></i>Sign out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+     <!-- ========== top navbar- End===== -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="admin-icon">
+             <i class="fas fa-user-shield fs-1 text-white"></i>
+        </div>
+        <h5 class="text-center" style="color:#E4C590;">Nimra Ahsan</h5>
+        <div class="mt-4 sidebar-icon">
+          <a href="#"> <i class="fa-solid fa-chart-line me-3"></i>Dashboard</a>
+          <a href="#" class="disabled-link"> <i class="fas fa-file me-2"></i>Pages</a>
+           <a href="#" class="disabled-link"> <i class="fa-solid fa-pencil me-2"></i>Booking Management</a>
+           <a href="#" class="disabled-link"> <i class="fas fa-table me-2"></i>Table Management</a>
+           <a href="#" class="disabled-link"> <i class="fas fa-user-cog me-2"></i>Customer Management</a>
+           <a href="#" class="disabled-link"> <i class="fas fa-cogs me-2"></i>Settings</a>
+           <a href="#" class="disabled-link"> <i class="fas fa-file-alt me-2"></i>Reporting</a>
+       </div>   
+    </div> 
+      <div id="main">
+         <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fa-solid fa-bars fs-2"></i> <b class=" me-3">Dashboard</b></span>
+        <div class="container mt-5">
+            <div class="row">
+                  <!-- ========1st-box====== -->
+                <div class="col-lg-4 col-md-4 col-12 mt-3">
+                    <div class="dash-box py-4 rounded text-center bg-dark text-white">
+                        <i class="fas fa-calendar-check me-3 fs-1"></i>
+                        <h3 class="mt-2">Total Bookings</h3>
+                        <h6>150</h6>
+                    </div>
+                </div>
+                <!-- ========2nd-box====== -->
+                <div class="col-lg-4 col-md-4 col-12 mt-3">
+                    <div class="dash-box py-4 rounded text-center bg-dark text-white">
+                        <i class="fa-regular fa-calendar-days me-3 fs-1"></i>
+                        <h3 class="mt-2">Upcoming Reservations</h3>
+                        <h6>25</h6>
+                    </div>
+                </div>
+                  <!-- ========3rd-box====== -->
+                <div class="col-lg-4 col-md-4 col-12 mt-3">
+                    <div class="dash-box py-4 rounded text-center bg-dark text-white lh-5">
+                        <i class="fa-solid fa-chart-line me-3 fs-1"></i>
+                        <h3>Recent Activities</h3>
+                        <h6> New booking by Ayesha Sadiqa <br>
+                            Table 5 reserved <br>
+                            Booking cancellation by Numair Khan</h6>
+                    </div>
+                </div>
+                <!-- ========4th-box====== -->
+                <div class="col-lg-4 col-md-4 col-12 mt-3">
+                    <div class="dash-box py-4 rounded text-center bg-dark text-white">
+                        <i class="fa-solid fa-hand-holding-dollar me-3 fs-1"></i>
+                        <h3 class="mt-2">Revenue Summary</h3>
+                        <h6>$3,500</h6>
+                        <p>Last 30 days</p>
+                    </div>
+                </div>
+                <!-- ========5th-box====== -->
+                <div class="col-lg-4 col-md-4 col-12 mt-3">
+                    <div class="dash-box py-4 rounded text-center bg-dark text-white">
+                        <i class="fa-regular fa-clock me-3 fs-1"></i>
+                        <h3 class="mt-2">Peak Times</h3>
+                        <h6>Lunch: 12 PM - 2 PM (Mon-Sun) <br> <br>
+                            Dinner: 7 PM - 9 PM (Mon-Sun)</h6>
+                    </div>
+                </div>
+                <!-- ========6th-box====== -->
+                <div class="col-lg-4 col-md-4 col-12 mt-3">
+                    <div class="dash-box py-4 rounded text-center bg-dark text-white">
+                        <i class="fa-solid fa-chart-simple me-3 fs-1"></i>
+                        <h3 class="mt-2">Customer Insights</h3>
+                        <h6>45 new customers</h6>
+                        <p>Top customer: Sarah Khan</p>
+                    </div>
+                </div>
+
+            </div>
+        </div> 
+      </div>
+       
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+      </script>
+
+
+         
+
+</body>
+</html>
